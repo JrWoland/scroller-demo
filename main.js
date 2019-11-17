@@ -4,10 +4,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
   document.addEventListener('wheel', event => scroller.listenScroll(event))
-
-  function scroll(direction) {
-
-  }
-
-
+  document.addEventListener('swipeUp', (event) => scroller.scroll(1))
+  document.addEventListener('swipeDown', (event) => scroller.scroll(-1))
 })
