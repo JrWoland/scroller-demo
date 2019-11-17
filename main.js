@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
   console.log(scroller);
 
 
-  document.addEventListener('mousewheel', scroller.listenScroll)
+  document.addEventListener('wheel', event => scroller.listenScroll(event))
 
   function scroll(direction) {
 
